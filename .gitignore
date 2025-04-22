@@ -1,0 +1,15 @@
+# Node.js
+node_modules/
+dist/
+build/
+bin/
+
+# Pulumi
+.Pulumi/
+*.bak
+*.tmp
+
+# pulumi.dev.yaml
+# pulumi.prod.yaml
+
+secrets.*
