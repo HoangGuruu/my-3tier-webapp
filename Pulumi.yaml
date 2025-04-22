@@ -1,0 +1,7 @@
+name: my-3tier-webapp
+description: A 3-tier web application architecture on AWS using Pulumi
+runtime:
+  name: nodejs
+  options:
+    packagemanager: npm
+

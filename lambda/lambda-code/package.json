@@ -1,0 +1,10 @@
+{
+  "name": "lambda-function",
+  "version": "1.0.0",
+  "description": "Lambda function for 3-tier web application",
+  "main": "index.js",
+  "dependencies": {
+    "pg": "^8.7.1",
+    "aws-sdk": "^2.1048.0"
+  }
+}

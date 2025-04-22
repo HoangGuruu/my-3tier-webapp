@@ -1,0 +1,15 @@
+encryptionsalt: v1:FNzaJmpd6ko=:v1:ZvCX9BghJCznTG41:ZzxaaT8EEtBNWlHbKnMNvYd4jMP3PQ==
+config:
+  aws:region: ap-southeast-1
+  my-3tier-webapp:vpcCidr: 10.1.0.0/16
+  my-3tier-webapp:publicSubnetCidrs: ["10.1.1.0/24", "10.1.2.0/24"]
+  my-3tier-webapp:privateSubnetCidrs: ["10.1.3.0/24", "10.1.4.0/24"]
+  my-3tier-webapp:bucketName: s3-bucket
+  my-3tier-webapp:dbUsername:
+    secure: v1:wG5XiSrmgBtRubqJ:4KcP/QCIDZcpnNAkpQ9gbxZ1VkZy+TQw
+  my-3tier-webapp:dbPassword:
+    secure: v1:Mis9laSA8/mYadVW:XnMdB+KNtL88BEa4hepPzWv6y/3KvvI7d7qW0NaKNA==
+  my-3tier-webapp:dbName:
+    secure: v1:oiK9OOYYOO0LPtYo:Or0yTVEtROEIc0QgzdQtyv8MZrQd
+  my-3tier-webapp:instanceType: db.t3.micro
+  my-3tier-webapp:allocatedStorage: "20"
