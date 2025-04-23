@@ -1,4 +1,15 @@
+# Three-Tier Web Application Architecture - Pulumi
 ![Architecture Diagram](./images/diagram.png)
+## Diagram
+1. Users access the web app through browsers or devices.
+2. The frontend (HTML/CSS/JS) is served from an S3 bucket set up for static website hosting.
+3. API Gateway handles requests from the frontend and routes them to AWS Lambda.
+4. The app runs inside a VPC:
+- Public subnet: holds the NAT Gateway and connects to the Internet Gateway.
+- Private subnet: hosts Lambda and RDS.
+- Route tables manage traffic across subnets and the internet.
+5. The Lambda function executes backend logic and queries the database as needed.
+6. Amazon RDS (PostgreSQL) stores data securely, using subnet and security groups to allow access only from Lambda.
 
 ##  Prerequisites
 - Node.js >= 18
